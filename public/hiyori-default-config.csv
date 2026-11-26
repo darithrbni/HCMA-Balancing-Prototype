@@ -1,0 +1,25 @@
+category,key,label,follower,energy,motivation,money,communication,gaming_skill,artistry,musical,value
+activity,stream_chill_talk,Streaming - Chill Talk,180,-30,4,0,4,0,0,0,0
+activity,stream_playing_game,Streaming - Playing Game,220,-35,3,0,1,4,0,0,0
+activity,stream_drawing,Streaming - Drawing,200,-35,3,0,1,0,4,0,0
+activity,stream_singing,Streaming - Singing,240,-40,4,0,1,0,0,4,0
+activity,ent_chit_chat,Entertainment - Chit Chat,40,-15,8,-15,3,0,0,0,0
+activity,ent_gaming,Entertainment - Gaming,30,-20,10,-20,0,3,0,0,0
+activity,prac_vocal,Practice - Vocal Training,0,-25,-2,-10,0,0,0,5,0
+activity,prac_sketching,Practice - Sketching,0,-25,-2,-10,0,0,5,0,0
+activity,stroll,Take a Stroll,0,15,12,-5,0,0,0,0,0
+activity,sm_post,Social Media - Post,90,-10,12,0,1,0,1,0,0
+activity,sm_read_comment,Social Media - Read Comment,35,-10,6,0,2,0,0,0,0
+activity,sm_doomscroll,Social Media - Doomscroll,0,5,-14,0,0,0,0,0,0
+activity,rest,Rest & Relax,0,55,15,0,0,0,0,0,0
+activity,part_time,Part-Time Job,0,-45,-10,180,1,0,0,0,0
+global_rule,monetization_threshold,Syarat Follower untuk Monetisasi,0,0,0,0,0,0,0,0,10000
+global_rule,money_multiplier,Pengali Money dari Monetisasi,0,0,0,0,0,0,0,0,0.05
+cycle_multiplier,cycle_1,Pengali Follower Cycle 1,0,0,0,0,0,0,0,0,1
+cycle_multiplier,cycle_2,Pengali Follower Cycle 2,0,0,0,0,0,0,0,0,1.6
+cycle_multiplier,cycle_3,Pengali Follower Cycle 3,0,0,0,0,0,0,0,0,2.5
+cycle_multiplier,cycle_4,Pengali Follower Cycle 4,0,0,0,0,0,0,0,0,4
+cycle_multiplier,cycle_5,Pengali Follower Cycle 5,0,0,0,0,0,0,0,0,6.5
+cycle_multiplier,cycle_6,Pengali Follower Cycle 6,0,0,0,0,0,0,0,0,10
+cycle_multiplier,cycle_7,Pengali Follower Cycle 7,0,0,0,0,0,0,0,0,15
+cycle_multiplier,cycle_8,Pengali Follower Cycle 8,0,0,0,0,0,0,0,0,22
