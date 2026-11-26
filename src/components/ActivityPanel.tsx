@@ -1,8 +1,7 @@
 import { ACTIVITY_META, CATEGORY_META, CATEGORY_ORDER } from '../constants/defaultConfig';
 import {
   canExecuteActivity,
-  formatBlockerLabel,
-  getActivityBlockers,
+  getActivityBlockerLabel,
 } from '../utils/gameEngine';
 import { playClickSfx } from '../utils/audio';
 import { StatDeltaLabel } from './StatDeltaLabel';
@@ -69,16 +68,12 @@ export function ActivityPanel({
           const enabled = keys.some((key) =>
             canExecuteActivity(key, gameState, config),
           );
-          const disabled = locked || !enabled;
+          const disabled = isMulti ? false : locked || !enabled;
           const fixedKey = keys[0];
-          const blockers = Array.from(
-            new Set(
-              keys.flatMap((key) =>
-                getActivityBlockers(key, gameState, config),
-              ),
-            ),
-          );
-          const statusLabel = disabled ? formatBlockerLabel(blockers) : '';
+          const statusLabel =
+            !isMulti && disabled
+              ? getActivityBlockerLabel(fixedKey, gameState, config)
+              : '';
 
           return (
             <button
@@ -95,7 +90,9 @@ export function ActivityPanel({
                 }
               }}
             >
-              <span className="activity-title">{meta.label}</span>
+              <span className="activity-title">
+                {isMulti ? `▶︎ ${meta.label}` : meta.label}
+              </span>
               {statusLabel && (
                 <span className="validation-label locked">{statusLabel}</span>
               )}

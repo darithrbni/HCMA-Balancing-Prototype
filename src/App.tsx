@@ -100,6 +100,7 @@ export default function App() {
 
   return (
     <div className="app-shell">
+      <h1 className="app-title">Simulasi Balancing HCMA</h1>
       <div className="main-grid">
         <ActivityPanel
           gameState={gameState}
